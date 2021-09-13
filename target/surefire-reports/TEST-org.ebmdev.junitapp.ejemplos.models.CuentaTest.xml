@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.ebmdev.junitapp.ejemplos.models.CuentaTest" time="3.451" tests="62" errors="0" skipped="5" failures="0">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Cursos\JUnit y Mockito + SpringBoot test\workspace\target\test-classes;C:\Cursos\JUnit y Mockito + SpringBoot test\workspace\target\classes;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Emilio\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Emilio\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16\bin"/>
+    <property name="sun.java.command" value="C:\Users\Emilio\AppData\Local\Temp\surefire15358365675582811340\surefirebooter14203588043411066138.jar C:\Users\Emilio\AppData\Local\Temp\surefire15358365675582811340 2021-09-13T14-09-45_408-jvmRun1 surefire14329817142600749312tmp surefire_06506501091787319490tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Cursos\JUnit y Mockito + SpringBoot test\workspace\target\test-classes;C:\Cursos\JUnit y Mockito + SpringBoot test\workspace\target\classes;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Emilio\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Emilio\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Emilio\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Emilio"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-03-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-16"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Cursos\JUnit y Mockito + SpringBoot test\workspace"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Emilio\AppData\Local\Temp\surefire15358365675582811340\surefirebooter14203588043411066138.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="16+36-2231"/>
+    <property name="user.name" value="Emilio"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Emilio\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Emilio\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.2.1"/>
+    <property name="java.version" value="16"/>
+    <property name="user.dir" value="C:\Cursos\JUnit y Mockito + SpringBoot test\workspace"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-16\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-16\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.19\sbin;C:\Program Files (x86)\Calibre2\;C:\Users\Emilio\AppData\Local\Microsoft\WindowsApps;C:\Users\Emilio\AppData\Roaming\npm;C:\Users\Emilio\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="16+36-2231"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="timeOutTest" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$timeOutTests" time="1.026"/>
+  <testcase name="timeOutTest2" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$timeOutTests" time="0.963"/>
+  <testcase name="timeOutAssertionsTest" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$timeOutTests" time="0.961"/>
+  <testcase name="testDebitoCuentaCsvSource2{String, String}[1]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.019"/>
+  <testcase name="testDebitoCuentaCsvSource2{String, String}[2]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaCsvSource2{String, String}[3]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvSource2{String, String}[4]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaCsvSource2{String, String}[5]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0"/>
+  <testcase name="testDebitoCuentaCsvSource{String, String}[1]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.005"/>
+  <testcase name="testDebitoCuentaCsvSource{String, String}[2]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvSource{String, String}[3]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.005"/>
+  <testcase name="testDebitoCuentaCsvSource{String, String}[4]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0"/>
+  <testcase name="testDebitoCuentaCsvSource{String, String}[5]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvFileSource{String}[1]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.004"/>
+  <testcase name="testDebitoCuentaCsvFileSource{String}[2]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaCsvFileSource{String}[3]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvFileSource{String}[4]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaCsvFileSource{String}[5]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvFileSource{String}[6]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvFileSource{String}[7]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaCsvFileSource2{String, String}[1]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvFileSource2{String, String}[2]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaCsvFileSource2{String, String}[3]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaCsvFileSource2{String, String}[4]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaCsvFileSource2{String, String}[5]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaValueSource{String}[1]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.003"/>
+  <testcase name="testDebitoCuentaValueSource{String}[2]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaValueSource{String}[3]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaValueSource{String}[4]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.003"/>
+  <testcase name="testDebitoCuentaValueSource{String}[5]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaMethodSource{String}[1]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaMethodSource{String}[2]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaMethodSource{String}[3]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.001"/>
+  <testcase name="testDebitoCuentaMethodSource{String}[4]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0"/>
+  <testcase name="testDebitoCuentaMethodSource{String}[5]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$ParameterizedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaRepetir{RepetitionInfo}[1]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$RepeatedTests" time="0.008"/>
+  <testcase name="testDebitoCuentaRepetir{RepetitionInfo}[2]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$RepeatedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaRepetir{RepetitionInfo}[3]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$RepeatedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaRepetir{RepetitionInfo}[4]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$RepeatedTests" time="0.002"/>
+  <testcase name="testDebitoCuentaRepetir{RepetitionInfo}[5]" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$RepeatedTests" time="0.008"/>
+  <testcase name="testSaldoCuentaDev" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaNombreSaldoTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaNombreSaldoTest.testSaldoCuentaDev(CuentaTest.java:224)
+</skipped>
+    <system-out><![CDATA[Iniciando el test.
+Finalizando el test.
+]]></system-out>
+  </testcase>
+  <testcase name="testSaldoCuentaDev2" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaNombreSaldoTest" time="0.001"/>
+  <testcase name="testNumeroProcesadores" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$EnvVariableTest" time="0.002"/>
+  <testcase name="testJavaHome" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$EnvVariableTest" time="0"/>
+  <testcase name="imprimirVariablesAmbiente" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$EnvVariableTest" time="0.036"/>
+  <testcase name="testUsernameProperty" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$SystemPropertiesTest" time="0.001"/>
+  <testcase name="testDev" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$SystemPropertiesTest" time="0">
+    <skipped message="System property [ENV] does not exist"/>
+  </testcase>
+  <testcase name="test64BitsArch" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$SystemPropertiesTest" time="0.004"/>
+  <testcase name="imprimirSystemProperties" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$SystemPropertiesTest" time="0.108"/>
+  <testcase name="testSoloJDK8" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$JavaVersionTest" time="0">
+    <skipped message="Disabled on JRE version: 16"/>
+  </testcase>
+  <testcase name="testSoloJDK16" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$JavaVersionTest" time="0"/>
+  <testcase name="testNoWindows" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$SOTest" time="0">
+    <skipped message="Disabled on operating system: Windows 10"/>
+  </testcase>
+  <testcase name="testSoloLinuxMac" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$SOTest" time="0">
+    <skipped message="Disabled on operating system: Windows 10"/>
+  </testcase>
+  <testcase name="testSoloWindows" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$SOTest" time="0.001"/>
+  <testcase name="testCreditoCuenta" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0"/>
+  <testcase name="testDineroInsuficienteExceptionCuenta" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0"/>
+  <testcase name="testDebitoCuenta" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0"/>
+  <testcase name="testSaldoCuenta" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0"/>
+  <testcase name="testTransferirDineroCuenta" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0.001"/>
+  <testcase name="testRelacionBancoCuentas" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0"/>
+  <testcase name="testReferenciaCuenta" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0.001"/>
+  <testcase name="testNombreCuenta" classname="org.ebmdev.junitapp.ejemplos.models.CuentaTest$CuentaBancoTest" time="0"/>
+</testsuite>

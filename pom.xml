@@ -7,6 +7,19 @@
     <groupId>org.ebmdev.junitapp</groupId>
     <artifactId>junit_app</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <!-- mediante este configuration y group podemos definir que test con un tag concreto queremos ejecutar -->
+                <!--                <configuration>-->
+                <!--                    <groups>param</groups>-->
+                <!--                </configuration>-->
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -14,6 +27,7 @@
             <version>5.7.2</version>
         </dependency>
     </dependencies>
+
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>

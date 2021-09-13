@@ -10,16 +10,20 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.math.BigDecimal;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.*;
 
 class CuentaTest {
     Cuenta cuenta;
+    private TestInfo testInfo;
+    private TestReporter testReporter;
 
     @BeforeAll //Añade cierta funcionalidad antes de ejecutar cualquier método de la clase
     static void beforeAll() {
@@ -33,9 +37,12 @@ class CuentaTest {
 
     @BeforeEach
         //Añade cierta funcionalidad antes de ejecutar cada uno de los métodos de la clase test.
-    void setUp() {
+    void setUp(TestInfo testInfo, TestReporter testReporter) {
         this.cuenta = new Cuenta("Ebmdev", new BigDecimal("1000.00"));
+        this.testInfo = testInfo;
+        this.testReporter = testReporter;
         System.out.println("Iniciando el test.");
+        testReporter.publishEntry("ejecutando: " + testInfo.getDisplayName() + " " + testInfo.getTestMethod().get().getName() + " con las etiquetas " + testInfo.getTags());
     }
 
     @AfterEach
@@ -44,6 +51,7 @@ class CuentaTest {
         System.out.println("Finalizando el test.");
     }
 
+    @Nested
     class CuentaBancoTest {
         @Test
         @DisplayName("Test para el nombre de la cuenta")
@@ -306,6 +314,28 @@ class CuentaTest {
             cuenta.debito(new BigDecimal(cantidad));
             assertNotNull(cuenta.getSaldo());
             assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
+        }
+    }
+
+    @Nested
+    class timeOutTests {
+        @Test
+        @Timeout(1)
+        void timeOutTest() throws InterruptedException {
+            TimeUnit.MILLISECONDS.sleep(950);
+        }
+
+        @Test
+        @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
+        void timeOutTest2() throws InterruptedException {
+            TimeUnit.MILLISECONDS.sleep(950);
+        }
+
+        @Test
+        void timeOutAssertionsTest() {
+            assertTimeout(Duration.ofMillis(1000l),() -> {
+                TimeUnit.MILLISECONDS.sleep(950);
+            } );
         }
     }
 }

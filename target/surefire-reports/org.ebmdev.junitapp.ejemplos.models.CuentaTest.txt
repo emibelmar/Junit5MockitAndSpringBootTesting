@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.ebmdev.junitapp.ejemplos.models.CuentaTest
+-------------------------------------------------------------------------------
+Tests run: 62, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 3.451 s - in org.ebmdev.junitapp.ejemplos.models.CuentaTest
